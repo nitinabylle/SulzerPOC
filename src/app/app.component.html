@@ -1,0 +1,11 @@
+<div>
+  <app-header></app-header>
+   <div id="content">
+     <app-left-nav></app-left-nav>
+ 
+     <main id="router-content" [ngClass]="{'full-view': isFullView==false}">
+     <router-outlet></router-outlet>
+     </main>
+   </div>
+ </div>
+ 
