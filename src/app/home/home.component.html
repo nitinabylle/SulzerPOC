@@ -33,15 +33,120 @@
                         </div>
                 </div>
                 <div class="col-2"><label for="email">Column Section:</label></div>
-                <div class="col-4">
+                <div class="col-3">
                         <div class="form-group">
-                                <select class="form-select bg-yellow">
-                                        <option>Select</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                      </select>
+                                <select class="form-select bg-yellow" style="width: 180px;">
+                                </select>
                         </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="email">Spacing [mm]:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <input type="text" class="form-control bg-yellow" id="text">
+                        </div>
+                </div>
+                <div class="col-2"><label for="email">No of Trays:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <input type="text" class="form-control bg-yellow" id="text">
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="email">Tray Type:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <select class="form-select bg-yellow" style="width: 180px;">
+                                        <option *ngFor="let tray of trayType" [ngValue]="tray.id">{{tray.name}}</option>
+                                </select>
+                        </div>
+                </div>
+                <div class="col-2"><label for="email">Deck Type:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <select class="form-select bg-yellow" style="width: 180px;">
+                                
+                                </select>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="email">Panel Layout:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <select class="form-select bg-yellow" style="width: 180px;">
+                                      
+                                </select>
+                        </div>
+                </div>
+                <div class="col-2"><label for="email">Valve Type:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <select class="form-select bg-yellow" style="width: 180px;">
+                                        <option *ngFor="let value of valueType" [ngValue]="value.id">{{value.name}}</option>
+                                        
+                                </select>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="email">No of Passes:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <select class="form-select bg-yellow" style="width: 180px;">
+                                      
+                                </select>
+                        </div>
+                </div>
+                <div class="col-2"><label for="email">No of Valves per tray:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <select class="form-select bg-yellow" style="width: 180px;">
+                                
+                                </select>
+                        </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="email">Downcomer Type:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <select class="form-select bg-yellow" style="width: 180px;">
+                                      
+                                </select>
+                        </div>
+                </div>
+                <div class="col-2"><label for="email">No of identical:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <input type="text" class="form-control bg-yellow" id="text">
+                        </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="email">Valve lift [mm]:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <input type="text" class="form-control bg-yellow" id="text">
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><label for="email">Article:</label></div>
+                <div class="col-3">
+                        <div class="form-group">
+                                <label for="file">Choose File</label>
+                                <input type="file"
+                                       id="file"
+                                       (change)="handleFileInput($event.target.files)">
+                            </div>
+                            
                 </div>
             </div>
          
