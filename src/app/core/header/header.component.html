@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
     <ul class="header-list pull-left">
         <li >
             <button type="button" aria-label="Toggle left Navigation" class="btn btn-link" (click)="toggleSideNav($event)" aria-controls="side-bar" [attr.aria-expanded]="leftSideNavBarExpanded">
@@ -10,11 +10,40 @@
                 <img width="45" height="30" alt="" class="image-round" 
                 src="../../../assets/img/sulzer-logo.svg" />
               
-          </a>
-            </li>  
-    
+            </a>
+          </li>
     
     </ul>
     
     
-    </header>
+    </header> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#"><img width="45" height="30" alt="" class="image-round" 
+            src="../../../assets/img/sulzer-logo.svg" /></a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">File <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Edit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tools</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Administration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        </div>
+      </nav>

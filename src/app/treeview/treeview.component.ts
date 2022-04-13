@@ -81,9 +81,9 @@ export class TreeviewComponent implements OnInit, AfterViewInit {
 
   getExpandCollapseClass(item: any) {
     if (item != null && item.children != null && item.children.length > 0) {
-      return "fa "+this.model.iconExpand;
+      return "fa "+ "fa-folder-o"//this.model.iconExpand;
     }
-    return "fa "+this.model.iconNeutral; 
+    return "fa "+ "fa-folder-open" //this.model.iconNeutral; 
   }
 
   isChildrenExists(items: any[]) {

@@ -34,8 +34,7 @@ export class LeftNavComponent implements OnInit {
 
     let pictures:Array<FileFolders>= new Array<FileFolders>();
     let p1:FileFolders=new FileFolders("IDAE","VAC",null);
-    let p2:FileFolders=new FileFolders("E&S","GRAD",[new FileFolders("Column1","grad_111",null),
-    new FileFolders("Section1","grad_212",null),
+    let p2:FileFolders=new FileFolders("E&S","GRAD",[new FileFolders("Column1","grad_111",[new FileFolders("Section1","grad_212",null)]),
     new FileFolders("E & S Euroscientific LTD","grad_313",null)]);
     pictures.push(p1);
     pictures.push(p2);
@@ -72,34 +71,24 @@ export class LeftNavComponent implements OnInit {
     
     this.treeData=[
       new FileFolders("9076821","column",pictures),
-      new FileFolders("Videos","VDS",videos),
-      new FileFolders("Documents","DCMNTS",documents),
-      new FileFolders("Music","MUSC",music),
-      new FileFolders("Recent","RCNT",recentFolders),
-      new FileFolders("Downloads","DWNLDS",downloads),
+      // new FileFolders("Videos","VDS",videos),
+      // new FileFolders("Documents","DCMNTS",documents),
+      // new FileFolders("Music","MUSC",music),
+      // new FileFolders("Recent","RCNT",recentFolders),
+      // new FileFolders("Downloads","DWNLDS",downloads),
     ]
       this.demoData=new TreeModel("code",
                                   "name",
                                   "children",
                                   this.treeData,
                                   null, 
-                                  true, 
+                                  false, 
                                   "Sulzure: Tree View",
                                   "demoData_folderStructure",
-                                  "fa-plus-square",
-                                  "fa-minus-square",
+                                  "fa-folder-o",
+                                  "fa-folder-open",
                                   "fa-square-o");
-      this.demoData2=new TreeModel("code",
-                                  "name",
-                                  "children",
-                                  this.treeData,
-                                  null, 
-                                  true, 
-                                  "Example 2: Tree View",
-                                  "demoData2_FolderStructure",
-                                  "fa-chevron-right",
-                                  "fa-chevron-down",
-                                  "fa-square-o");             
+              
 
   }
 
