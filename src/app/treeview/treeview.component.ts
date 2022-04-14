@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChildren, QueryList, ElementRef, AfterViewInit, Renderer2 } from '@angular/core';
 import { TreeModel } from 'src/app/model/tree.model';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-treeview',
   templateUrl: './treeview.component.html',
@@ -24,7 +24,8 @@ export class TreeviewComponent implements OnInit, AfterViewInit {
   TAB_INDEX: string = "tabindex";
   currentActiveDescdentElement: string ="";
 
-  constructor(private renderer: Renderer2) { }
+  constructor(private renderer: Renderer2,
+    private _router: Router) { }
 
   ngOnInit() {
 
@@ -77,6 +78,11 @@ export class TreeviewComponent implements OnInit, AfterViewInit {
       }
     });
 
+  }
+  renderPage($event: any, item: any){
+    if(item.name.toUpperCase() == "SECTION1"){
+        this._router.navigateByUrl('/section');
+    }
   }
 
   getExpandCollapseClass(item: any) {

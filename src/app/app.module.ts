@@ -7,7 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { HomeModule } from './home/home.module';
 import { TreeviewModule } from './treeview/treeview.module';
 import { HeaderComponent } from './core/header/header.component';
-import {LeftNavComponent} from './core/left-nav/left-nav.component'
+import {LeftNavComponent} from './core/left-nav/left-nav.component';
+import { SectionComponent } from './section/section.component'
 
 
 
@@ -15,7 +16,8 @@ import {LeftNavComponent} from './core/left-nav/left-nav.component'
   declarations: [
     AppComponent,
     HeaderComponent,
-    LeftNavComponent
+    LeftNavComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
