@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DropDownModel } from '../model/DropDownModel';
+import { SectionModel } from '../model/SectionModel';
 import { AppService } from '../shared/service-proxies/service.proxies';
 @Component({
   selector: 'app-section',
@@ -10,6 +11,7 @@ export class SectionComponent implements OnInit {
   trayType:any;
   valueType:any;
   PanelLayout:any;
+  elementContain:SectionModel;
   fileToUpload: File | null = null;
   constructor(
     private _services: AppService
@@ -17,6 +19,7 @@ export class SectionComponent implements OnInit {
 
   ngOnInit(): void {
     var dropDown= this._services.getSectionContain();
+    this.elementContain = this._services.getSectionElement();
     this.trayType = dropDown['TrayType'];
     this.valueType = dropDown['ValveType'];
     this.PanelLayout = dropDown['PanelLayout'];
