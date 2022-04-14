@@ -9,6 +9,8 @@ import { TreeviewModule } from './treeview/treeview.module';
 import { HeaderComponent } from './core/header/header.component';
 import {LeftNavComponent} from './core/left-nav/left-nav.component';
 import { SectionComponent } from './section/section.component'
+import { AppService } from './shared/service-proxies/service.proxies';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -24,9 +26,10 @@ import { SectionComponent } from './section/section.component'
     FormsModule,
     AppRoutingModule,
     HomeModule,
-    TreeviewModule
+    TreeviewModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
