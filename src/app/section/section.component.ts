@@ -9,6 +9,7 @@ import { AppService } from '../shared/service-proxies/service.proxies';
 export class SectionComponent implements OnInit {
   trayType:any;
   valueType:any;
+  PanelLayout:any;
   fileToUpload: File | null = null;
   constructor(
     private _services: AppService
@@ -18,6 +19,7 @@ export class SectionComponent implements OnInit {
     var dropDown= this._services.getSectionContain();
     this.trayType = dropDown['TrayType'];
     this.valueType = dropDown['ValveType'];
+    this.PanelLayout = dropDown['PanelLayout'];
   }
   handleFileInput(files: FileList) {
     this.fileToUpload = files.item(0);

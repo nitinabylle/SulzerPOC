@@ -68,3 +68,9 @@ select{
     border-radius: 5px;
     border-color: #ced4da;
 }
+
+@media screen and (max-width: 768px) {
+    .text-right{
+        text-align: left !important;
+    }
+  }

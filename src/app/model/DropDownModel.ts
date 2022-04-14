@@ -27,6 +27,9 @@ TrayType  = [
         {id: 7, name: "B6H"},
         {id: 8, name: "B6X"}
         ]
+    SectionType =[
+        {id: 1, name: "Tray Section"},
+    ]
 
     
 }
