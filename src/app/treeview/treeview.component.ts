@@ -83,6 +83,9 @@ export class TreeviewComponent implements OnInit, AfterViewInit {
     if(item.name.toUpperCase() == "SECTION1"){
         this._router.navigateByUrl('/section');
     }
+    else{
+      this._router.navigateByUrl('/home'); //will delete once every page will be created
+    }
   }
 
   getExpandCollapseClass(item: any) {
