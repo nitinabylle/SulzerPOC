@@ -28,8 +28,27 @@ TrayType  = [
         {id: 8, name: "B6X"}
         ]
     SectionType =[
-        {id: 1, name: "Tray Section"},
+        {id: 1, name: "Tray Section"}
     ]
+    DeckType =[{id: 1, name: "Bubcap"},
+    {id: 2, name:"None"},
+    {id:3, name:"Sieve"},
+    {id:4, name:"Valve"}]
+
+    DownComer=[{id: 1, name: "AM"},
+    {id: 2, name: "BM"},
+    {id: 3, name: "CS plus Box"},
+    {id: 4, name: "CS Box"},
+    {id: 5, name: "Enveloped"},
+    {id: 6, name: "HiFi plus CS box"},
+    {id: 7, name: "HiFi CS Box"},
+    {id: 8, name: "ModArc"},
+    {id: 9, name: "Pipes"},
+    {id: 10, name: "Standard"},
+    {id: 11, name: "StepArc"},
+    {id: 12, name: "TB, Tubed downcomer"},
+    {id: 12, name: "Truncated"},
+   ]
 
     
 }

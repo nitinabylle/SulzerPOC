@@ -71,7 +71,7 @@
                     <div class="col-md-2">
                             <div class="form-group">
                                     <select class="form-select bg-yellow" style="width: 110px;">
-                                   
+                                        <option *ngFor="let deck of DeckType" [ngValue]="deck.id">{{deck.name}}</option>
                                     </select>
                             </div>
                     </div>
@@ -102,7 +102,7 @@
                     <div class="col-md-2">
                             <div class="form-group">
                                     <select class="form-select bg-yellow" style="width: 110px;">
-                                         
+                                        <option>{{elementContain.NoOfPasses}}</option>
                                     </select>
                             </div>
                     </div>
@@ -121,7 +121,7 @@
                     <div class="col-md-2">
                             <div class="form-group">
                                     <select class="form-select bg-yellow" style="width: 110px;">
-                                         
+                                        <option *ngFor="let down of DownComer" [ngValue]="down.id">{{down.name}}</option>
                                     </select>
                             </div>
                     </div>
@@ -137,7 +137,9 @@
                     <div class="col-md-2 text-right"><label for="email">Valve lift [mm]:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control bg-yellow" id="text" [ngModel]="elementContain.ValveLift | number : '1.2-2'">
+                                <select class="form-select bg-yellow" >
+                                        <option>{{elementContain.ValveLift | number : '1.2-2'}}</option>
+                                </select>
                             </div>
                     </div>
                 </div>
