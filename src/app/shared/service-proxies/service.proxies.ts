@@ -20,7 +20,7 @@ export class AppService {
     getSectionContain() {
         //return this.http.get(this.rootURL + '/contain'); open to call Api
         //return new DropDownModel();
-        return [{"ProjectNo":9000017,"QuotationNo":1,"ColumnNo":2,"SectionNo":1,"SequenceNo":1,"TrayType":"Conventional","TrayTypeCode":"BDH","DeckType":"Valve","TrayPanelLayout":"ex","TrayConstructionTypeCode":"01","TrayDowncomerType":0,"TrayArticleNo":"10004284","TrayMatNo":null,"TrayQuantity":10,"TraySpacing":6.095999804928006e+002,"TrayValveQuantity":677,"TraySubTypeCode":null,"TrayValveLift":1.270000000000000e+001,"TrayNo_NFA":1}];
+        return [{"ProjectNo":9000017,"innerDiameter":2700,"QuotationNo":1,"ColumnNo":2,"SectionNo":1,"SequenceNo":1,"TrayType":"Conventional","TrayTypeCode":"BDH","DeckType":"Valve","TrayPanelLayout":"ex","TrayConstructionTypeCode":"01","TrayDowncomerType":0,"TrayArticleNo":"10004284","TrayMatNo":null,"TrayQuantity":10,"TraySpacing":6.095999804928006e+002,"TrayValveQuantity":677,"TraySubTypeCode":null,"TrayValveLift":1.270000000000000e+001,"TrayNo_NFA":1}];
     }
 
     getSectionElement() {
