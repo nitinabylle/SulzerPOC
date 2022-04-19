@@ -16,11 +16,15 @@
            (keydown)="executeKeydown($event)"
            [tabindex]="setTabIndexOnLoad(role,i)"  
            #options [attr.aria-expanded]="collapsedState(item)" >
-          <i aria-hidden="true" [ngClass]="getExpandCollapseClass(item)" [id]="getIconId(item,treeid)" (click)="toggleSelection($event,item)" #icons>
+           <i aria-hidden="true" [ngClass]="getExpandCollapseClassArrow(item)" [id]="getIconIdArrow(item,treeid)"  (click)="toggleSelection($event,item)" style="float:inline-start;margin-right: 2px;" ></i>
+          <i aria-hidden="true" [ngClass]="getExpandCollapseClass(item)" [id]="getIconId(item,treeid)" (click)="toggleSelection($event,item)"  style="float:inline-start;" #icons>
           </i>
+       
           <span class="tree-item-label" (click)="renderPage($event,item)">{{item[model.lid]}}</span>
         <ng-container *ngTemplateOutlet="treeViewList; context:{ $implicit: item.children,role:'group',treeid:model.treeNodeId,parentid:item.code  }">
         </ng-container>
       </li>
     </ul>
   </ng-template>
+
+             <!-- [attr.data-last]="i==list.length-1?1:0" -->

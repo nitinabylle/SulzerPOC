@@ -1,68 +1,69 @@
 
 
-<div class="row">
+<div class="row" >
    
-        <div class="col-12 card py-3">
-                <div class="row">
+        <div class="col-12 card ">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">Inner Diameter [mm]:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control bg-yellow" id="text" [ngModel]="section.innerDiameter | number : '1.2-2'">
+                                    <input  type="text"  class="input-lg form-control bg-yellow" id="text" [ngModel]="section.innerDiameter | number : '1.2-2'">
                             </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">Section Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                <select class="form-select bg-yellow" >
+                                <select  class="input-lg form-select bg-yellow" >
                                    <option>Tray Section</option>
                                 </select>
                             </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">Section Height[mm]:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control" id="text" [ngModel]="elementContain.sectionHeight | number : '1.2-2'">
+                                    <input  type="text" class="input-lg form-control" id="text" [ngModel]="elementContain.sectionHeight | number : '1.2-2'">
                             </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">Section Description:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control" id="text">
+                                    <input  type="text" class="input-lg form-control" id="text">
                             </div>
                     </div>
                     <div class="col-md-2 text-right"><label for="email">Column Section:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <select class="form-select bg-yellow" style="width: 110px;">
+                                    <select  class="input-lg form-select bg-yellow">
+                                         <!-- style="width: 110px;" -->
                                     </select>
                             </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email" >Spacing [mm]:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control bg-yellow" id="text" [ngModel]="elementContain.Spacing">
+                                    <input  type="text" class="input-lg form-control bg-yellow" id="text" [ngModel]="elementContain.Spacing">
                             </div>
                     </div>
                     <div class="col-md-2 text-right"><label for="email">No of Trays:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control bg-yellow" id="text">
+                                    <input  type="text" class="input-lg form-control bg-yellow" id="text">
                             </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">Tray Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                <select name="TrayType" class="form-select bg-yellow">
+                                <select  name="TrayType" class="input-lg form-select bg-yellow">
                                         <option *ngFor="let tray of trayType" [ngValue]="tray.id">{{tray.name}}</option>
                                 </select>
                             </div>
@@ -70,7 +71,8 @@
                     <div class="col-md-2 text-right"><label for="email">Deck Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <select class="form-select bg-yellow" style="width: 110px;">
+                                    <select  class="input-lg form-select bg-yellow">
+                                         <!-- style="width: 110px;" -->
                                         <option *ngFor="let deck of DeckType" [ngValue]="deck.id">{{deck.name}}</option>
                                     </select>
                             </div>
@@ -78,18 +80,18 @@
                     <div class="col-md-2 text-right"><label for="email">Panel Layout:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                <select class="form-select bg-yellow">
+                                <select  class="input-lg form-select bg-yellow">
                                         <option *ngFor="let panel of PanelLayout" [ngValue]="panel.id">{{panel.name}}</option>
                                 </select>
                             </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                    
                     <div class="col-md-2 text-right"><label for="email">Valve Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                <select class="form-select bg-yellow">
+                                <select  class="input-lg form-select bg-yellow">
                                         <option *ngFor="let value of valueType" [ngValue]="value.id">{{value.name}}</option>
                                         
                                 </select>
@@ -97,11 +99,12 @@
                     </div>
                    
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">No of Passes:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <select class="form-select bg-yellow" style="width: 110px;">
+                                    <select  class="input-lg form-select bg-yellow">
+                                         <!-- style="width: 110px;" -->
                                         <option>{{elementContain.NoOfPasses}}</option>
                                     </select>
                             </div>
@@ -109,18 +112,20 @@
                     <div class="col-md-2 text-right"><label for="email">No of Valves per tray:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <select class="form-select bg-yellow" style="width: 110px;">
+                                    <select  class="input-lg form-select bg-yellow">
+                                         <!-- style="width: 110px;" -->
                                    
                                     </select>
                             </div>
                     </div>
                    
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">Downcomer Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <select class="form-select bg-yellow" style="width: 110px;">
+                                    <select  class="input-lg form-select bg-yellow">
+                                         <!-- style="width: 110px;" -->
                                         <option *ngFor="let down of DownComer" [ngValue]="down.id">{{down.name}}</option>
                                     </select>
                             </div>
@@ -128,26 +133,26 @@
                     <div class="col-md-2 text-right"><label for="email">No of identical:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control bg-yellow" id="text">
+                                    <input  type="text" class="form-control bg-yellow" id="text">
                             </div>
                     </div>
                    
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">Valve lift [mm]:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                <select class="form-select bg-yellow" >
+                                <select  class="input-lg form-select bg-yellow" >
                                         <option>{{elementContain.ValveLift | number : '1.2-2'}}</option>
                                 </select>
                             </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" style="background-color: whitesmoke;padding-top: 10px;">
                     <div class="col-md-2 text-right"><label for="email">Article:</label></div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="text" style="width:400px">
+                                <input  type="text" class="form-control" id="text">
                                 </div>
                                
                     </div>
