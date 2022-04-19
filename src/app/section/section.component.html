@@ -62,7 +62,7 @@
                     <div class="col-md-2 text-right"><label for="email">Tray Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                <select name="TrayType" class="form-select bg-yellow">
+                                <select name="TrayType" class="form-select bg-yellow" [(ngModel)]="section.TrayType">
                                         <option *ngFor="let tray of trayType" [ngValue]="tray.id">{{tray.name}}</option>
                                 </select>
                             </div>
