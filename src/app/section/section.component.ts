@@ -16,19 +16,23 @@ export class SectionComponent implements OnInit {
   elementContain:SectionModel;
   section:SectionContentModel;
   fileToUpload: File | null = null;
+  mySelect = '2';
   constructor(
     private _services: AppService
   ) { }
 
   ngOnInit(): void {
     var dropDown= new DropDownModel();
-    this.section =Object.assign(new SectionContentModel() ,this._services.getSectionContain());
-    this.elementContain = this._services.getSectionElement();
-    this.trayType = dropDown['TrayType'];
-    this.valueType = dropDown['ValveType'];
-    this.PanelLayout = dropDown['PanelLayout'];
-    this.DeckType = dropDown['DeckType'];
-    this.DownComer = dropDown['DownComer']
+    this._services.getSectionContain().subscribe(result=>{
+      this.section = Object.assign(new SectionContentModel(), result) ;
+      this.elementContain = this._services.getSectionElement();
+      this.trayType = dropDown['TrayType'];
+      this.valueType = dropDown['ValveType'];
+      this.PanelLayout = dropDown['PanelLayout'];
+      this.DeckType = dropDown['DeckType'];
+      this.DownComer = dropDown['DownComer'];
+    });
+    
   }
   handleFileInput(files: FileList) {
     this.fileToUpload = files.item(0);

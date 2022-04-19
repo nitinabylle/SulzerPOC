@@ -7,7 +7,7 @@
                     <div class="col-md-2 text-right"><label for="email">Inner Diameter [mm]:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control bg-yellow" id="text" [ngModel]="section[0].innerDiameter | number : '1.2-2'">
+                                    <input type="text" class="form-control bg-yellow" id="text" [ngModel]="section.innerDiameter | number : '1.2-2'">
                             </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                     <div class="col-md-2 text-right"><label for="email">Tray Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                <select class="form-select bg-yellow">
+                                <select name="TrayType" class="form-select bg-yellow">
                                         <option *ngFor="let tray of trayType" [ngValue]="tray.id">{{tray.name}}</option>
                                 </select>
                             </div>
