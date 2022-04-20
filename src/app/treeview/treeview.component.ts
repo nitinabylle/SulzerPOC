@@ -95,6 +95,13 @@ export class TreeviewComponent implements OnInit, AfterViewInit {
     return "fa "+ "fa-folder-open" //this.model.iconNeutral; 
   }
 
+  getExpandCollapseClassArrow(item: any) {
+    if (item != null && item.children != null && item.children.length > 0) {
+      return "fa "+ "fa-caret-right"//this.model.iconExpand;
+    }
+    return "fa "+ "fa-caret-down" //this.model.iconNeutral; 
+  }
+
   isChildrenExists(items: any[]) {
     return (items != null && items.length > 0) ? true : false;
   }
@@ -297,6 +304,11 @@ export class TreeviewComponent implements OnInit, AfterViewInit {
     return item[this.model.cid] + "_" + treeId + this.TREEVIEW_SUFFIX;
   }
   getIconId(item:any,treeId:string){
+    let itemId=this.getTreeItemId(item,treeId);
+    return itemId+"_"+this.ICON_SUFFIX;
+  }
+
+  getIconIdArrow(item:any,treeId:string){
     let itemId=this.getTreeItemId(item,treeId);
     return itemId+"_"+this.ICON_SUFFIX;
   }

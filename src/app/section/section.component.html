@@ -62,16 +62,16 @@
                     <div class="col-md-2 text-right"><label for="email">Tray Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                <select name="TrayType" class="form-select bg-yellow" [(ngModel)]="section.TrayType">
-                                        <option *ngFor="let tray of trayType" [ngValue]="tray.id">{{tray.name}}</option>
+                                <select name="TrayType" class="form-select bg-yellow" [(ngModel)]="mySelectTrayType">
+                                        <option *ngFor="let tray of trayType" [value]="tray.id" >{{tray.name}}</option>
                                 </select>
                             </div>
                     </div>
                     <div class="col-md-2 text-right"><label for="email">Deck Type:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <select class="form-select bg-yellow" style="width: 110px;">
-                                        <option *ngFor="let deck of DeckType" [ngValue]="deck.id">{{deck.name}}</option>
+                                    <select class="form-select bg-yellow" style="width: 110px;" [(ngModel)]="mySelectDeckType">
+                                        <option *ngFor="let deck of deckType" [ngValue]="deck.id">{{deck.name}}</option>
                                     </select>
                             </div>
                     </div>
@@ -148,12 +148,7 @@
                     <div class="col-md-3">
                             <div class="form-group">
                                 <input type="text" class="form-control" id="text" style="width:400px">
-                                </div>
-                               
-                    </div>
-                </div>
-             
-        </div>
+
       </div>
 
 
