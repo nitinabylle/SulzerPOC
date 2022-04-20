@@ -32,8 +32,8 @@ export class SectionComponent implements OnInit {
       this.PanelLayout = dropDown['PanelLayout'];
       this.deckType = dropDown['DeckType'];
       this.DownComer = dropDown['DownComer'];
-      this.mySelectTrayType = this.trayType.find(x=>x.name.toUpperCase()==this.section.trayType.toUpperCase()).id;
-      this.mySelectDeckType = this.deckType.find(x=>x.name.toUpperCase()==this.section.deckType.toUpperCase()).id;
+      this.mySelectTrayType = this.trayType.find(x=>x.name.toUpperCase()==this.section[0].TrayType.toUpperCase()).id;
+      this.mySelectDeckType = this.deckType.find(x=>x.name.toUpperCase()==this.section[0].DeckType.toUpperCase()).id;
     });
     
   }
