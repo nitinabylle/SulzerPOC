@@ -17,9 +17,9 @@ export class SectionContentModel{
     ColumnNo:number= 0
     SectionNo:number=0
     SequenceNo:number=0
-    TrayType:string= ""
+    trayType:string= ""
     TrayTypeCode:string=""
-    DeckType: string=""
+    deckType: string=""
     TrayPanelLayout:string=""
     TrayConstructionTypeCode:string=""
     TrayDowncomerType:number=0

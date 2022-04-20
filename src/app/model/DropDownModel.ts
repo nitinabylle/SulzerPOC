@@ -49,6 +49,7 @@ TrayType  = [
     {id: 12, name: "TB, Tubed downcomer"},
     {id: 12, name: "Truncated"},
    ]
-
+  
+   TrayTypeArr = ["Cartridge", "Conventional", "GT-EXTRACT", "Optim", "Plus Trays", "Shell", "Slit Tray", "Trays"]
     
 }

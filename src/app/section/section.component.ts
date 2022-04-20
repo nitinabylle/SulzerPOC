@@ -11,12 +11,13 @@ export class SectionComponent implements OnInit {
   trayType:any;
   valueType:any;
   PanelLayout:any;
-  DeckType:any;
+  deckType:any;
   DownComer: any;
   elementContain:SectionModel;
   section:SectionContentModel;
   fileToUpload: File | null = null;
-  mySelect = '2';
+  mySelectTrayType:number;
+  mySelectDeckType:number;
   constructor(
     private _services: AppService
   ) { }
@@ -26,11 +27,13 @@ export class SectionComponent implements OnInit {
     this._services.getSectionContain().subscribe(result=>{
       this.section = Object.assign(new SectionContentModel(), result) ;
       this.elementContain = this._services.getSectionElement();
-      this.trayType = dropDown['TrayType'];
+      this.trayType =  dropDown['TrayType'];
       this.valueType = dropDown['ValveType'];
       this.PanelLayout = dropDown['PanelLayout'];
-      this.DeckType = dropDown['DeckType'];
+      this.deckType = dropDown['DeckType'];
       this.DownComer = dropDown['DownComer'];
+      this.mySelectTrayType = this.trayType.find(x=>x.name.toUpperCase()==this.section.trayType.toUpperCase()).id;
+      this.mySelectDeckType = this.deckType.find(x=>x.name.toUpperCase()==this.section.deckType.toUpperCase()).id;
     });
     
   }
