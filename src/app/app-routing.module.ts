@@ -6,7 +6,7 @@ import { SectionComponent } from './section/section.component';
 const routes: Routes = [
   { path: '', redirectTo:'home', pathMatch: 'full'},
   {path: 'home', component:HomeComponent},
-  {path: 'section', component:SectionComponent}
+  {path: '**', component:SectionComponent}
 ];
 
 @NgModule({

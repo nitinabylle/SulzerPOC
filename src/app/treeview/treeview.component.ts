@@ -81,7 +81,7 @@ export class TreeviewComponent implements OnInit, AfterViewInit {
   }
   renderPage($event: any, item: any){
     if(item.name.toUpperCase() == "SECTION1"){
-        this._router.navigateByUrl('/section');
+        this._router.navigateByUrl('/'+ item.code);
     }
     else{
       this._router.navigateByUrl('/home'); //will delete once every page will be created

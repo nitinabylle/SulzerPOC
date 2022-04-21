@@ -25,7 +25,8 @@ export class SectionComponent implements OnInit {
 
   ngOnInit(): void {
     var dropDown= new DropDownModel();
-    this._services.getSectionContain().subscribe(result=>{
+    let url = window.location.href.split(/[/, ]+/).pop();
+    this._services.getSectionContain(url).subscribe(result=>{
       this.section = Object.assign(new SectionContentModel(), result) ;
       this.elementContain = this._services.getSectionElement();
       this.innerDiameter=2700;

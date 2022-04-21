@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { SectionContentModel } from './model/SectionModel';
 import { AppService } from './shared/service-proxies/service.proxies';
@@ -24,10 +25,13 @@ export class AppComponent implements OnInit {
     {"code":"7","label":"Pink"},
   ]
   constructor(
-    private _services: AppService
+    private _services: AppService,
+    private _router: Router,
+    
   ) { }
   ngOnInit(): void {
-    this._services.getSectionContain().subscribe(result=>{
+    let url = window.location.href.split(/[/, ]+/).pop();
+    this._services.getSectionContain(url).subscribe(result=>{
       this.isLoad = true;
       this.section = Object.assign(new SectionContentModel(), result) ;
       this.currentItem = this.section[0].ProjectNo.toString();

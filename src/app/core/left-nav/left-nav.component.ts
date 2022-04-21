@@ -35,7 +35,7 @@ export class LeftNavComponent implements OnInit {
 
     let pictures:Array<FileFolders>= new Array<FileFolders>();
     let p1:FileFolders=new FileFolders("IDAE","VAC",null);
-    let p2:FileFolders=new FileFolders("E&S","GRAD",[new FileFolders("Column1","grad_111",[new FileFolders("Section1","grad_212",null)]),
+    let p2:FileFolders=new FileFolders("E&S","GRAD",[new FileFolders("Column1","grad_111",[new FileFolders("Section1",this.node,null)]),
     new FileFolders("E & S Euroscientific LTD","grad_313",null)]);
     pictures.push(p1);
     pictures.push(p2);
