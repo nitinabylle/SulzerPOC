@@ -25,7 +25,7 @@
                     <div class="col-md-2 text-right"><label for="email">Section Height[mm]:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control" id="text" [ngModel]="elementContain.sectionHeight | number : '1.2-2'">
+                                    <input type="text" class="form-control" id="text" [ngModel]="section[0].SectHeight | number : '1.2-2'">
                             </div>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <div class="col-md-2 text-right"><label for="email" >Spacing [mm]:</label></div>
                     <div class="col-md-2">
                             <div class="form-group">
-                                    <input type="text" class="form-control bg-yellow" id="text" [ngModel]="elementContain.Spacing">
+                                    <input type="text" class="form-control bg-yellow" id="text" [ngModel]="section[0].TraySpacing| number : '1.2-2'">
                             </div>
                     </div>
                     <div class="col-md-2 text-right"><label for="email">No of Trays:</label></div>

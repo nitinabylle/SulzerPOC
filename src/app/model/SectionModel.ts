@@ -26,7 +26,7 @@ export class SectionContentModel{
     TrayArticleNo:number=0
     TrayMatNo:string=null
     TrayQuantity:number=0
-    TraySpacing:number=0
+    TraySpacing : number=0
     TrayValveQuantity:number=0
     TraySubTypeCode:string=null
     TrayValveLift:number=0
