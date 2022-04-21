@@ -22,6 +22,7 @@ export class LeftNavComponent implements OnInit {
   demoData2:TreeModel;
   treeData:FileFolders[];
   showSideNav:boolean=true;
+  @Input() node = '';
   
   constructor() { }
 
@@ -70,7 +71,7 @@ export class LeftNavComponent implements OnInit {
 
     
     this.treeData=[
-      new FileFolders("9076821","column",pictures),
+      new FileFolders(this.node,"column",pictures),
       // new FileFolders("Videos","VDS",videos),
       // new FileFolders("Documents","DCMNTS",documents),
       // new FileFolders("Music","MUSC",music),

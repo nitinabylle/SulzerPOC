@@ -18,6 +18,7 @@ export class SectionComponent implements OnInit {
   fileToUpload: File | null = null;
   mySelectTrayType:number;
   mySelectDeckType:number;
+  innerDiameter: number;
   constructor(
     private _services: AppService
   ) { }
@@ -27,6 +28,7 @@ export class SectionComponent implements OnInit {
     this._services.getSectionContain().subscribe(result=>{
       this.section = Object.assign(new SectionContentModel(), result) ;
       this.elementContain = this._services.getSectionElement();
+      this.innerDiameter=2700;
       this.trayType =  dropDown['TrayType'];
       this.valueType = dropDown['ValveType'];
       this.PanelLayout = dropDown['PanelLayout'];

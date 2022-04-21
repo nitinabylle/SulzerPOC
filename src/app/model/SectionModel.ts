@@ -31,7 +31,7 @@ export class SectionContentModel{
     TraySubTypeCode:string=null
     TrayValveLift:number=0
     TrayNo_NFA:number=0
-    innerDiameter: number=2700
+    //innerDiameter: number=2700
 }
 
 
