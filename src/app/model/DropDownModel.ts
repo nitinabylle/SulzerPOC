@@ -28,10 +28,10 @@ TrayType  = [
         {id: 8, name: "B6X"}
         ]
     SectionType =[
-        {id: 1, name: "Packing Section"},
-        {id: 1, name: "Ring Section"},
         {id: 1, name: "Tray Section"},
-        {id: 1, name: "Separator Section"},
+        {id: 2, name: "Packing Section"},
+        {id: 3, name: "Ring Section"},
+        {id: 4, name: "Separator Section"},
 
     ]
     DeckType =[{id: 1, name: "Bubcap"},
