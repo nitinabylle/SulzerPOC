@@ -28,7 +28,11 @@ TrayType  = [
         {id: 8, name: "B6X"}
         ]
     SectionType =[
-        {id: 1, name: "Tray Section"}
+        {id: 1, name: "Packing Section"},
+        {id: 1, name: "Ring Section"},
+        {id: 1, name: "Tray Section"},
+        {id: 1, name: "separators Section"},
+
     ]
     DeckType =[{id: 1, name: "Bubcap"},
     {id: 2, name:"None"},
@@ -49,6 +53,8 @@ TrayType  = [
     {id: 12, name: "TB, Tubed downcomer"},
     {id: 12, name: "Truncated"},
    ]
+
+  
   
    TrayTypeArr = ["Cartridge", "Conventional", "GT-EXTRACT", "Optim", "Plus Trays", "Shell", "Slit Tray", "Trays"]
     

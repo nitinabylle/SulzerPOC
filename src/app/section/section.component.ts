@@ -13,6 +13,7 @@ export class SectionComponent implements OnInit {
   PanelLayout:any;
   deckType:any;
   DownComer: any;
+  SectionType: any;
   elementContain:SectionModel;
   section:SectionContentModel;
   fileToUpload: File | null = null;
@@ -35,6 +36,7 @@ export class SectionComponent implements OnInit {
       this.PanelLayout = dropDown['PanelLayout'];
       this.deckType = dropDown['DeckType'];
       this.DownComer = dropDown['DownComer'];
+      this.SectionType = dropDown['SectionType'];
       this.mySelectTrayType = this.trayType.find(x=>x.name.toUpperCase()==this.section[0].TrayType.toUpperCase()).id;
       this.mySelectDeckType = this.deckType.find(x=>x.name.toUpperCase()==this.section[0].DeckType.toUpperCase()).id;
     });
