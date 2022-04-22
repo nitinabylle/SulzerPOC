@@ -31,7 +31,7 @@ TrayType  = [
         {id: 1, name: "Packing Section"},
         {id: 1, name: "Ring Section"},
         {id: 1, name: "Tray Section"},
-        {id: 1, name: "separators Section"},
+        {id: 1, name: "Separator Section"},
 
     ]
     DeckType =[{id: 1, name: "Bubcap"},
