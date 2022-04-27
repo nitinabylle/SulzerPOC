@@ -31,6 +31,9 @@ export class AppComponent implements OnInit {
   ) { }
   ngOnInit(): void {
     let url = window.location.href.split(/[/, ]+/).pop();
+    if(!parseInt(url)){
+        url='9000017';
+    }
     this._services.getSectionContain(url).subscribe(result=>{
       this.isLoad = true;
       this.section = Object.assign(new SectionContentModel(), result) ;
